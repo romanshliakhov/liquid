@@ -1,76 +1,10 @@
 .btn {
-  height: 63px;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  grid-gap: 7px;
-  background-color: var(--color-magenta);
-  border: 2px solid var(--color-magenta);
+  padding: 8px 24px;
+  background-color: var(--color-blue);
+  border-radius: 6px;
   font-family: var(--font-family-inter);
   font-size: 16px;
-  line-height: 21px;
-  font-weight: 500;
+  line-height: 28px;
+  font-weight: 600;
   color: var(--color-white);
-  border-radius: 12px;
-  transition: all 0.4s ease;
-
-  &:hover,
-  &:active {
-    border: 2px solid var(--color-magenta-hover);
-    background-color: var(--color-magenta-hover);
-  }
-
-  &--login {
-    height: 46px;
-    max-width: 170px;
-
-    @media (max-width: 992px) {
-      max-width: 130px;
-    }
-
-    @media (max-width: 768px) {
-      max-width: 120px;
-    }
-  }
-
-  &--404 {
-    max-width: 232px;
-  }
-
-  &--coockie {
-    max-width: 255px;
-  }
-
-  &--gold {
-    border: 2px solid var(--color-gold);
-    background-color: var(--color-gold);
-    color: var(--color-main);
-
-    &:hover,
-    &:active {
-      color: var(--color-white);
-    }
-  }
-
-  &--border {
-    border: 2px solid #FFFFFF;
-    background-color: transparent;
-
-    &:hover,
-    &:active {
-      border: 2px solid var(--color-gold);
-      background-color: var(--color-gold);
-      color: var(--color-main);
-    }
-  }
-
-  &--webmaster {
-    &:hover,
-    &:active {
-      border: 2px solid var(--color-gold);
-      background-color: var(--color-gold);
-      color: var(--color-main);
-    }
-  }
 }
