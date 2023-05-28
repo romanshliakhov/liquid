@@ -4,16 +4,16 @@ body {
   padding: 0;
   height: 100%;
   width: 100%;
-  font-family: var(--font-family-inter);
-  font-size: clamp(16px, 2.347vw, 18px);
-  line-height: clamp(21px, 2.999vw, 23px);
-  font-weight: 400;
-  overflow-x: hidden;
+  font-family: var(--font-family-manrope);
+  // font-size: clamp(16px, 2.347vw, 18px);
+  // line-height: clamp(21px, 2.999vw, 23px);
+  // font-weight: 400;
+  // overflow-x: hidden;
 
-  @media (max-width: 575px) {
-    font-size: clamp(14px, 2.778vw, 16px);
-    line-height: clamp(18px, 3.646vw, 21px);
-  }
+  // @media (max-width: 575px) {
+  //   font-size: clamp(14px, 2.778vw, 16px);
+  //   line-height: clamp(18px, 3.646vw, 21px);
+  // }
 }
 
 html {
@@ -171,16 +171,5 @@ input[type="number"] {
 }
 
 
-.policy,
-.development {
-  color: var(--color-grey);
-  text-decoration: underline;
-  transition: all 0.4s ease;
-
-  &:hover {
-    color: var(--color-gold);
-    text-decoration: none;
-  }
-}
 
 
