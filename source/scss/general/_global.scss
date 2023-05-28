@@ -5,6 +5,11 @@ body {
   height: 100%;
   width: 100%;
   font-family: var(--font-family-manrope);
+  font-size: 19px;
+  line-height: 29px;
+  font-weight: 500;
+  letter-spacing: -0.8px;
+  color: var(--color-matterhorn);
   // font-size: clamp(16px, 2.347vw, 18px);
   // line-height: clamp(21px, 2.999vw, 23px);
   // font-weight: 400;
@@ -151,7 +156,6 @@ input[type="number"] {
   min-height: 100%;
   display: flex;
   flex-direction: column;
-  overflow-x: hidden;
 }
 
 .main {
@@ -164,10 +168,10 @@ input[type="number"] {
 
 .container {
   position: relative;
-  max-width: 1300px;
+  // max-width: 1300px;
   width: 100%;
   margin: 0 auto;
-  padding: 0 15px;
+  padding: 0 85px;
 }
 
 
