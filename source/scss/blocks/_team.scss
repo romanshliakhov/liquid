@@ -1,0 +1,50 @@
+.team {
+  max-width: 1135px;
+  width: 100%;
+  margin: 0 auto;
+  padding-bottom: 100px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 40px;
+  align-items: center;
+  justify-content: space-between;
+
+  &__composition {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+  }
+
+  &__composition-image {
+    display: flex;
+
+    picture,
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 12px;
+    }
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 12px;
+  }
+
+  &__info-title {
+    max-width: 490px;
+    text-align: left;
+  }
+
+  &__info-text {
+    max-width: 520px;
+    font-family: var(--font-family-inter);
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 400;
+    color: var(--color-grey);
+    letter-spacing: 0.01em;
+  }
+}
