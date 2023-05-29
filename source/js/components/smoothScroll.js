@@ -1,9 +1,9 @@
-const anchorButtons = document.querySelectorAll('.nav__list');
+const anchorButtons = document.querySelectorAll('.nav');
 const header = document.querySelector('header');
 
-let menuBtn = document.querySelector('.burger');
-let menu = document.querySelector('.mobile');
-let disableScroll = document.querySelector('body');
+// let menuBtn = document.querySelector('.burger');
+// let menu = document.querySelector('.mobile');
+// let disableScroll = document.querySelector('body');
 
 window.addEventListener('DOMContentLoaded', () => {
   anchorButtons.forEach(function(item){
@@ -12,9 +12,9 @@ window.addEventListener('DOMContentLoaded', () => {
 
       e.preventDefault();
 
-      menu.classList.remove('active');
-      menuBtn.classList.remove('active');
-      disableScroll.classList.remove('body-scroll');
+      // menu.classList.remove('active');
+      // menuBtn.classList.remove('active');
+      // disableScroll.classList.remove('body-scroll');
 
 
       window.scrollTo({
