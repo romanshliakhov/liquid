@@ -15,6 +15,7 @@ import './components/modals.js';
 // import './components/choices.js';
 // import './components/showPassword.js';
 import './components/smoothScroll.js';
+import './components/timer.js';
 // import './components/counterNumber.js';
 
 
