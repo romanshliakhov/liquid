@@ -11,6 +11,15 @@
     padding: 32px;
     grid-gap: 17px;
 
+    &::before {
+      content: var(--timer-decor);
+      position: absolute;
+      top: -58px;
+      right: 34px;
+      width: 94px;
+      height: 94px;
+    }
+
     ul {
       grid-gap: 15px;
 
