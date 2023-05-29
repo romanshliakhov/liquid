@@ -28,5 +28,10 @@
     position: absolute;
     right: 0;
     bottom: 0;
+
+    picture,
+    img {
+      border-radius: 30px;
+    }
   }
 }
