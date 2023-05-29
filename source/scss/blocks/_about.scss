@@ -1,5 +1,9 @@
 .about {
-  padding: 170px 0 100px;
+  padding: clamp(100px, 13.71vw, 170px) 0 clamp(60px, 13.021vw, 100px);;
+
+  @media (max-width: 1024px) {
+    padding-top: clamp(40px, 4.839vw, 60px);
+  }
 
   &__top,
   &__bot {

@@ -23,8 +23,8 @@ document.addEventListener('DOMContentLoaded', () => {
           minutes = 0;
         } else {
           daysVal.textContent = days;
-          hoursVal.textContent = ('0' + hours).slice(-2);
-          minutesVal.textContent = ('0' + minutes).slice(-2);
+          hoursVal.textContent = hours;
+          minutesVal.textContent = minutes;
         }
       };
 

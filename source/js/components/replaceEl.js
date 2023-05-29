@@ -4,8 +4,8 @@ let replaceSettings = {
   beforeend: 'beforeend', //  внутри элемента targetElement, после его последнего потомка
   afterend: 'afterend', // после самого элемента targetElement
   mobile: 576,
-  smallTablet: 750,
-  tablet: 942
+  smallTablet: 769,
+  tablet: 975
 }
 
 let elementName = {
@@ -13,9 +13,9 @@ let elementName = {
   headerNavParent: '.header__logo',
   headerNavMobile: '.mobile__menu',
 
-  headerLogin: '.header__login',
-  headerLoginParent: '.header__nav',
-  headerLoginMobile: '.mobile__menu',
+  headerBtn: '.header__btn',
+  headerBtnParent: '.header__wrapp',
+  headerBtnMobile: '.mobile__menu',
 }
 
 let items = [...document.querySelectorAll('.wrapper')];
@@ -39,11 +39,13 @@ const replaceElements = (elements, elementClass, desktopClass, mobileClass, mobi
 }
 
 window.addEventListener('resize', () => {
-  replaceElements(items, elementName.headerNav, elementName.headerNavParent, elementName.headerNavMobile, replaceSettings.afterbegin, replaceSettings.afterend,  replaceSettings.smallTablet);
-  replaceElements(items, elementName.headerLogin, elementName.headerLoginParent, elementName.headerLoginMobile, replaceSettings.beforeend, replaceSettings.afterend,  replaceSettings.smallTablet);
+  replaceElements(items, elementName.headerNav, elementName.headerNavParent, elementName.headerNavMobile, replaceSettings.afterbegin, replaceSettings.afterend,  replaceSettings.tablet);
+
+  replaceElements(items, elementName.headerBtn, elementName.headerBtnParent, elementName.headerBtnMobile, replaceSettings.beforeend, replaceSettings.beforeend,  replaceSettings.tablet);
 });
 
 window.addEventListener('DOMContentLoaded', () => {
-  replaceElements(items, elementName.headerNav, elementName.headerNavParent, elementName.headerNavMobile, replaceSettings.afterbegin, replaceSettings.afterend,  replaceSettings.smallTablet);
-  replaceElements(items, elementName.headerLogin, elementName.headerLoginParent, elementName.headerLoginMobile, replaceSettings.beforeend, replaceSettings.afterend,  replaceSettings.smallTablet);
+  replaceElements(items, elementName.headerNav, elementName.headerNavParent, elementName.headerNavMobile, replaceSettings.afterbegin, replaceSettings.afterend,  replaceSettings.tablet);
+
+  replaceElements(items, elementName.headerBtn, elementName.headerBtnParent, elementName.headerBtnMobile, replaceSettings.beforeend, replaceSettings.beforeend,  replaceSettings.tablet);
 });

@@ -4,6 +4,12 @@
   top: 84px;
   z-index: 5;
 
+  @media (max-width: 1024px) {
+    position: relative;
+    top: initial;
+    padding: 30px 0;
+  }
+
   &__wrapp {
     display: flex;
     align-items: flex-start;
@@ -14,12 +20,29 @@
     }
   }
 
+  &__logo {
+    position: relative;
+    z-index: 25;
+  }
+
   &__btn {
     padding: 4px 15px;
+
+    @media (max-width: 992px) {
+      display: none;
+    }
   }
 
   &__switcher {
+    position: relative;
     display: flex;
+    z-index: 25;
+  }
+
+  &__nav {
+    @media (max-width: 992px) {
+      display: none;
+    }
   }
 
 

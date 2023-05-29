@@ -4,7 +4,7 @@ import './components/burger.js';
 // import './components/select.js';
 import './components/accordion.js';
 import './components/modals.js';
-// import './components/replaceEl.js';
+import './components/replaceEl.js';
 // import './components/links.js';
 // import './components/hideSticky.js';
 // import './components/lightGallery.js';
