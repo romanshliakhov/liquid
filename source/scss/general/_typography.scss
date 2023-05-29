@@ -1,16 +1,30 @@
 .h1 {
   font-family: var(--font-family-actaywide);
   font-size: 107px;
-  font-size: clamp(58px, 8.425vw, 107px);
   line-height: 107px;
-  line-height: clamp(80px, 7.431vw, 100px);
   font-weight: 700;
   color: var(--color-black);
   text-transform: uppercase;
 
+  @media (max-width: 1439px) {
+    font-size: clamp(90px, 7.431vw, 107px);
+    line-height: clamp(100px, 7.431vw, 107px);
+    white-space: nowrap;
+  }
+
   @media (max-width: 1240px) {
-    grid-gap: 0;
-    line-height: 100%;
+    font-size: clamp(65px, 7.258vw, 90px);
+    line-height: clamp(65px, 7.258vw, 90px);
+  }
+
+  @media (max-width: 992px) {
+    font-size: clamp(36px, 6.552vw, 65px);
+    line-height: clamp(36px, 6.552vw, 65px);
+  }
+
+  @media (max-width: 576px) {
+    font-size: clamp(32px, 6.25vw, 36px);
+    line-height: clamp(32px, 6.25vw, 36px);
   }
 }
 
