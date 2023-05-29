@@ -1,0 +1,32 @@
+.feature {
+  min-height: 350px;
+  position: relative;
+  padding: 32px 42px 32px 25px;
+  padding: 32px 22px 32px 26px;
+  background-color: var(--color-sea-blue);
+  border-radius: 30px;
+
+  &__title {
+    font-size: 28px;
+    line-height: 35px;
+    font-weight: 600;
+    letter-spacing: -0.8px;
+    color: var(--color-white);
+  }
+
+  &__descr {
+    position: relative;
+    font-family: var(--font-family-inter);
+    font-weight: 400;
+    letter-spacing: 0.01em;
+    color: var(--color-white);
+    z-index: 2;
+  }
+
+  &__bg {
+    display: flex;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+}
