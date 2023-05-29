@@ -29,9 +29,22 @@
       </ul>
 
       <div class="header__switcher">
-        <svg width='68' height='36'>
-        <use href='img/sprite/sprite.svg#switcher'></use>
-        </svg>
+        <label class="header__switcher-item">
+          <input class="header__switcher-input" type="radio" name="switcher" checked>
+          <span class="header__switcher-daytime">
+            <svg width='18' height='18'>
+              <use href='img/sprite/sprite.svg#dark'></use>
+            </svg>
+          </span>
+        </label>
+        <label class="header__switcher-item">
+          <input class="header__switcher-input" type="radio" name="switcher">
+          <span class="header__switcher-daytime">
+            <svg width='18' height='18'>
+              <use href='img/sprite/sprite.svg#light'></use>
+            </svg>
+          </span>
+        </label>
       </div>
 
       <button class="header__btn btn" data-path="claim">Claim airdrop</button>
