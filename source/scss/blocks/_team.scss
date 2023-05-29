@@ -2,12 +2,16 @@
   max-width: 1135px;
   width: 100%;
   margin: 0 auto;
-  padding-bottom: 100px;
+  padding-bottom: clamp(60px, 13.021vw, 100px);
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 40px;
   align-items: center;
   justify-content: space-between;
+
+  @media (max-width: 992px) {
+    grid-template-columns: 100%;
+  }
 
   &__composition {
     display: grid;
@@ -31,11 +35,21 @@
     display: flex;
     flex-direction: column;
     grid-gap: 12px;
+
+    @media (max-width: 992px) {
+      align-items: center;
+      text-align: center;
+    }
   }
 
   &__info-title {
     max-width: 490px;
+    width: 100%;
     text-align: left;
+
+    @media (max-width: 992px) {
+      text-align: center;
+    }
   }
 
   &__info-text {

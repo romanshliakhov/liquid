@@ -89,8 +89,8 @@
 
   &__title {
     font-family: var(--font-family-inter);
-    font-size: 37px;
-    line-height: 45px;
+    font-size: clamp(26px, 4.818vw, 37px);
+    line-height: clamp(30px, 5.859vw, 45px);
     font-weight: 600;
     color: var(--color-white);
     text-transform: uppercase;
@@ -102,9 +102,13 @@
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 10px;
 
+    @media (max-width: 576px) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
     button {
       width: 100%;
-      padding: 50px 0;
+      padding: clamp(25px, 6.51vw, 50px) 0;
       background: radial-gradient(68.15% 68.15% at 50% 50%, #1B60F5 0%, #C7D9FF 100%);
       border-radius: 15px;
       display: flex;
@@ -113,8 +117,8 @@
       justify-content: center;
       grid-gap: 4px;
       font-family: var(--font-family-actaywide);
-      font-size: 24px;
-      line-height: 30px;
+      font-size: clamp(18px, 3.125vw, 24px);
+      line-height: clamp(24px, 3.906vw, 30px);
       font-weight: 700;
       color: var(--color-white);
     }

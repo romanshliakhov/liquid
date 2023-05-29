@@ -8,6 +8,10 @@
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
+
+    @media (max-width: 1240px) {
+      align-items: center;
+    }
   }
 
   &__btn {

@@ -1,10 +1,14 @@
 .feature {
   min-height: 350px;
   position: relative;
-  padding: 32px 42px 32px 25px;
-  padding: 32px 22px 32px 26px;
+  padding: 32px clamp(10px, 1.528vw, 22px) 32px 26px;
   background-color: var(--color-sea-blue);
   border-radius: 30px;
+
+  @media (max-width: 992px) {
+    min-height: 300px;
+    height: 100%;
+  }
 
   &__title {
     font-size: 28px;

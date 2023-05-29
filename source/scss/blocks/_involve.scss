@@ -1,5 +1,5 @@
 .involve {
-  padding-bottom: 100px;
+  padding-bottom: clamp(60px, 13.021vw, 100px);
   display: flex;
   flex-direction: column;
   align-items: center;

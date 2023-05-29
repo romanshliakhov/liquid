@@ -1,4 +1,5 @@
 .btn {
+  position: relative;
   padding: 8px 24px;
   background-color: var(--color-blue);
   border-radius: 6px;
@@ -7,4 +8,5 @@
   line-height: 28px;
   font-weight: 600;
   color: var(--color-white);
+  z-index: 2;
 }
